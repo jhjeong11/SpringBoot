@@ -18,7 +18,7 @@ public class ExternalDataProvider {
         externalDataList.add(new ExternalData("8", "여덟번째", "정주희", new ArrayList<>()));
         externalDataList.add(new ExternalData("9", "아홉번째", "정주희", new ArrayList<>()));
         externalDataList.add(new ExternalData("10", "열번째", "정주희", new ArrayList<>()));
-        externalDataList.add(new ExternalData("11", "열힌번째", "정주희", new ArrayList<>()));
+        externalDataList.add(new ExternalData("11", "열한번째", "정주희", new ArrayList<>()));
         externalDataList.add(new ExternalData("12", "열두번째", "정주희", new ArrayList<>()));
 
 
