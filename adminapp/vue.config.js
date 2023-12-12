@@ -9,9 +9,9 @@ module.exports = defineConfig({
         target: 'http://localhost:8081',
         changeOrigin: true,
         ws: false,
-        headers: {
-          'Max-Forwarded-Size': '4096',
-        },
+        // headers: {
+        //   'Max-Forwarded-Size': '4096',
+        // },
       },
     },
   },

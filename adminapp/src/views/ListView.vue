@@ -1,6 +1,8 @@
 <!--src/views/ListView.vue-->
 <template>
-  <div ref="TuiGrid"></div>
+  <div ref="TuiGrid">
+    <h2>게시판</h2>
+  </div>
 </template>
 
 <script>

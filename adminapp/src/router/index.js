@@ -3,6 +3,7 @@ import PageHome from "../views/PageHome.vue";
 import DetailView from "../views/DetailView.vue";
 import PageExternalData from "@/views/PageExternalData.vue";
 import ListView from "@/views/ListView.vue";
+import PageDetailExternalData from "@/views/PageDetailExternalData.vue";
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         path: '/api/external-data',
         name: 'PageExternalData',
         component: PageExternalData
+    },
+    {
+        path: '/api/external-data/:id',
+        name: 'PageDetailExternalData',
+        component: PageDetailExternalData
     }
 
 ];

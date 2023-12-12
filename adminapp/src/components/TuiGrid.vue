@@ -11,7 +11,7 @@ export default {
   name: "TuiGrid",
   props: {
     data: {
-      type: Array,
+      type: [Array, Object],
       required: true,
     },
   },
@@ -56,13 +56,13 @@ export default {
           };
           this.gridInstance = new Grid(gridOption);
 
+
           this.gridInstance.on("click", (ev) => {
             const rowKey = ev.rowKey;
             const rowData = ev.instance.store.data.rawData[rowKey];
             console.log(rowData);
             if (ev.columnName === "title" && rowData) {
-
-              this.$router.push(`/detail/${rowData.id}`);
+              this.$router.push(`/api/external-data/${rowData.id}`);
             }
           });
         }
@@ -77,7 +77,6 @@ export default {
       this.gridInstance.destroy();
     }
   },
-
 }
 </script>
 
