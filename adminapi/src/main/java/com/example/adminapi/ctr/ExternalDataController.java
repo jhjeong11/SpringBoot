@@ -14,10 +14,10 @@ public class ExternalDataController {
     @GetMapping("/external-data")
     public List<ExternalData> getExternalData() {
         return ExternalDataProvider.getExternalData();
-        }
-
-        @GetMapping("/external-data/{id}")
-        public ExternalData getExternalDataById(@PathVariable String id) {
-        return ExternalDataProvider.getExternalDataById(id);
-        }
     }
+
+    @GetMapping("/external-data/{id}")
+    public ExternalData getExternalDataById(@PathVariable String id) {
+        return ExternalDataProvider.getExternalDataById(id);
+    }
+}
