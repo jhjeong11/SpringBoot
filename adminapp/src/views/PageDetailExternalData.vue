@@ -7,16 +7,16 @@
       <p>제목 : {{ rowData.title }}</p>
       <p>작성자 : {{ rowData.name }}</p>
     </div>
-    <div>
-      <comment-form :rowData="rowData"></comment-form>
-      <comment-list :postId="rowData.id"></comment-list>
-    </div>
+<!--    <div>-->
+<!--      <comment-form :rowData="rowData"></comment-form>-->
+<!--      <comment-list :postId="rowData.id"></comment-list>-->
+<!--    </div>-->
   </div>
 </template>
 
 <script>
-import CommentForm from "@/store/CommentForm.vue";
-import CommentList from "@/store/CommentList.vue";
+// import CommentForm from "@/store/CommentForm.vue";
+// import CommentList from "@/store/CommentList.vue";
 
 export default {
   data() {
@@ -40,7 +40,7 @@ export default {
       }
     },
   },
-  components: { CommentForm, CommentList },
+  // components: { CommentForm, CommentList },
 };
 </script>
 
